@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charlize - Software Developer Portfolio">
+    <title>Charlize | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="skills.js" defer></script>
+</head>
+
+<body>
+    <div class="cursor-fx" aria-hidden="true">
+        <div class="cursor-glow"></div>
+    </div>
+    <!-- Hero Section -->
+    <main class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Column: Text Content -->
+                <div class="hero-text">
+                    <p class="greeting">Nice to meet you!</p>
+                    <h1 class="hero-title">I'm <span class="accent-name">Charlize</span></h1>
+                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <p class="hero-description">
+                        I build and document real-world solutions using Salesforce Marketing Cloud and modern web
+                        technologies—focusing on clarity, usability, and systems that scale beyond "just working."
+                    </p>
+                    <a href="#contact" class="cta-button">Contact Me!</a>
+                </div>
+
+                <!-- Right Column: Illustration -->
+                <div class="hero-visual">
+                    <div class="illustration">
+                        <!-- Cute minimal cat-like blob illustration -->
+                        <svg width="676" height="437" viewBox="0 0 676 437" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- tail -->
+                            <path class="hero-tail"
+                                d="M675.267 267.345C675.267 352.121 428.267 477.345 519.267 354.845C595.767 324.345 676.879 246.845 535.767 199.845C515.267 177.345 518.267 140.845 571.767 137.345C624.786 137.345 675.267 182.569 675.267 267.345Z"
+                                fill="#05071D" />
+                            <!-- Body -->
+                            <path
+                                d="M558.267 331.345C558.267 442.354 414.441 432.07 264.267 435.845C85.2666 440.345 -9.58831 373.499 0.766936 254.845C12.7669 117.345 122.648 61.8449 250.267 61.8449C408.267 61.8449 555.267 215.345 558.267 331.345Z"
+                                fill="#05071D" />
+                            <!-- Left ear -->
+                            <path
+                                d="M58.8565 62.9524C65.7293 38.7558 69.1657 26.6575 75.145 20.1723C85.2307 9.23294 100.888 5.39943 114.887 10.442C123.186 13.4314 131.823 22.5737 149.097 40.8583C164.525 57.1895 172.239 65.3551 174.813 73.2679C179.151 86.5995 175.581 101.238 165.593 111.076C159.665 116.915 149.057 120.612 127.843 128.007L30.7668 161.845L58.8565 62.9524Z"
+                                fill="#05071D" />
+                            <!-- Left inner ear  -->
+                            <path
+                                d="M85.1132 69.5122C88.8672 54.9431 90.7442 47.6585 96.215 46.0682C101.686 44.4779 107.175 49.6211 118.155 59.9074L136.767 77.3449L76.2668 103.845L85.1132 69.5122Z"
+                                fill="#48386D" />
+                            <!-- Right ear -->
+                            <path
+                                d="M326.339 45.6328C367.676 11.7321 388.345 -5.21821 407.827 1.42023C427.309 8.05866 433.327 34.1026 445.364 86.1904L460.767 152.845L293.767 72.3449L326.339 45.6328Z"
+                                fill="#05071D" />
+                            <!-- Right inner ear -->
+                            <path
+                                d="M403.986 59.0958C399.858 46.7489 397.795 40.5754 392.795 39.0991C387.796 37.6228 382.71 41.6849 372.537 49.809L345.983 71.0152L417.781 100.362L403.986 59.0958Z"
+                                fill="#48386D" />
+                            <!--Left eye  -->
+                            <path class="hero-eye-shape hero-eye-shape--left"
+                                d="M155.267 214.845C155.267 235.279 145.193 251.845 132.767 251.845C120.34 251.845 110.267 235.279 110.267 214.845C110.267 194.41 120.34 177.845 132.767 177.845C145.193 177.845 155.267 194.41 155.267 214.845Z"
+                                fill="#D9D9D9" />
+                            <!-- Right eye -->
+                            <path class="hero-eye-shape hero-eye-shape--right"
+                                d="M350.267 217.845C350.267 238.279 340.193 254.845 327.767 254.845C315.34 254.845 305.267 238.279 305.267 217.845C305.267 197.41 315.34 180.845 327.767 180.845C340.193 180.845 350.267 197.41 350.267 217.845Z"
+                                fill="#D9D9D9" />
+                            <!-- Mouth -->
+                            <path
+                                d="M242.767 239.345C236.267 254.345 233.767 256.345 216.267 257.845C199.146 257.845 188.767 243.345 188.767 235.845C190.767 217.345 199.646 244.345 216.767 244.345C233.267 243.345 246.267 219.345 242.767 239.345Z"
+                                fill="#D9D9D9" />
+                            <!-- Left upper whiskers -->
+                            <path
+                                d="M97.2669 255.845C96.4482 262.422 80.7669 260.345 62.2669 259.345C43.9071 257.059 36.4482 253.422 37.267 246.845C38.0857 240.268 45.9071 239.559 64.2669 241.845C82.6267 244.131 98.0857 249.268 97.2669 255.845Z"
+                                fill="#D9D9D9" />
+                            <!-- Left lower whiskers -->
+                            <path
+                                d="M89.6025 272.178C90.4764 275.104 79.2353 278.402 66.2904 282.891C53.161 286.813 47.235 287.291 46.3611 284.365C45.4871 281.439 50.7126 279.076 63.842 275.154C76.9714 271.231 88.7285 269.252 89.6025 272.178Z"
+                                fill="#D9D9D9" />
+                            <!-- Right upper whiskers -->
+                            <path
+                                d="M362.64 256.079C363.568 262.655 381.329 260.579 402.283 259.579C423.079 257.293 431.527 253.655 430.6 247.079C429.672 240.502 420.813 239.793 400.018 242.079C379.223 244.364 361.713 249.502 362.64 256.079Z"
+                                fill="#D9D9D9" />
+                            <!-- Right lower whiskers -->
+                            <path
+                                d="M359.431 272.178C358.442 275.104 371.174 278.402 385.836 282.891C400.707 286.813 407.419 287.291 408.409 284.365C409.399 281.439 403.48 279.076 388.609 275.154C373.738 271.231 360.421 269.252 359.431 272.178Z"
+                                fill="#D9D9D9" />
+                            <!-- Left paw  -->
+                            <path
+                                d="M116.267 413.345C116.267 427.704 83.9547 427.345 68.7668 427.345C53.579 427.345 28.2668 427.704 28.2668 413.345C28.2668 398.986 53.579 383.845 68.7668 383.845C83.9547 383.845 116.267 398.986 116.267 413.345Z"
+                                fill="#48386D" />
+                            <!-- Right paw -->
+                            <path
+                                d="M334.267 421.683C334.267 436.208 304.158 435.844 290.005 435.844C275.853 435.844 252.267 436.208 252.267 421.683C252.267 407.159 275.853 391.845 290.005 391.845C304.158 391.845 334.267 407.159 334.267 421.683Z"
+                                fill="#48386D" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Me Section -->
+    <section class="about-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="about-header">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-intro">
+                    I work across Salesforce Marketing Cloud, internal tools, and web
+                    applications, with a focus on data, automation, and frontend systems.
+                </p>
+            </div>
+
+            <!-- Skill Cards (Full Width) -->
+            <div class="skill-cards">
+                <!-- Card 1: Salesforce Developer -->
+                <div class="skill-card">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="8" width="32" height="24" rx="2" stroke="#B4ADEA" stroke-width="2" />
+                            <path d="M4 14 H36" stroke="#B4ADEA" stroke-width="2" />
+                            <rect x="10" y="19" width="8" height="2" fill="#B4ADEA" />
+                            <rect x="10" y="24" width="12" height="2" fill="#B4ADEA" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Salesforce Developer</h3>
+                    <p class="card-skills">Marketing Cloud Next, Agentforce, SQL, AMPscript, Data Extensions, Journeys
+                    </p>
+                </div>
+
+                <!-- Card 2: Web Developer -->
+                <div class="skill-card">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="8" width="32" height="24" rx="2" stroke="#B4ADEA" stroke-width="2" />
+                            <path d="M12 18 L16 22 L12 26" stroke="#B4ADEA" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M20 26 H28" stroke="#B4ADEA" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Web Developer</h3>
+                    <p class="card-skills">HTML, CSS, JavaScript, React, Next.JS, Python</p>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Checklist and Illustration -->
+            <div class="about-bottom">
+                <p class="about-intro">
+                    I enjoy experimenting with AI to make workflows faster, smarter, and more efficient, and I’m always
+                    on the lookout for new tools and trends worth exploring. Outside of code, I recharge by spending
+                    time with my cat, reading, and watching films.
+                </p>
+
+
+                <!-- Illustration -->
+                <div class="about-illustration">
+                    <div class="illustration">
+                        <svg width="809" height="682" viewBox="0 0 809 682" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_13_340)">
+                                <path class="about-cat-tail"
+                                    d="M679 277.5C679 362.276 432 487.5 523 365C599.5 334.5 680.612 257 539.5 210C519 187.5 522 151 575.5 147.5C628.52 147.5 679 192.724 679 277.5Z"
+                                    fill="#05071D" />
+                                <path
+                                    d="M562 341.5C562 452.509 418.174 442.225 268 446C88.9998 450.5 -5.85516 383.654 4.50009 265C16.5001 127.5 126.381 72 254 72C412 72 559 225.5 562 341.5Z"
+                                    fill="#05071D" />
+                                <path
+                                    d="M62.5896 73.1074C69.4625 48.9109 72.8989 36.8126 78.8781 30.3273C88.9639 19.388 104.621 15.5545 118.62 20.5971C126.919 23.5865 135.556 32.7288 152.83 51.0134C168.258 67.3446 175.972 75.5102 178.547 83.4229C182.884 96.7546 179.314 111.393 169.326 121.231C163.398 127.07 152.791 130.767 131.576 138.162L34.5 172L62.5896 73.1074Z"
+                                    fill="#05071D" />
+                                <path
+                                    d="M88.8464 79.6673C92.6004 65.0981 94.4774 57.8136 99.9482 56.2232C105.419 54.6329 110.909 59.7761 121.888 70.0625L140.5 87.5L80 114L88.8464 79.6673Z"
+                                    fill="#48386D" />
+                                <path
+                                    d="M330.072 55.7878C371.409 21.8872 392.078 4.93687 411.56 11.5753C431.042 18.2137 437.06 44.2576 449.097 96.3454L464.5 163L297.5 82.5L330.072 55.7878Z"
+                                    fill="#05071D" />
+                                <path
+                                    d="M407.719 69.2509C403.592 56.9039 401.528 50.7305 396.528 49.2542C391.529 47.7779 386.443 51.84 376.27 59.964L349.717 81.1703L421.514 110.517L407.719 69.2509Z"
+                                    fill="#48386D" />
+                                <path class="about-cat-eye about-cat-eye--left"
+                                    d="M159 217C159 237.435 148.926 254 136.5 254C124.074 254 114 237.435 114 217C114 196.565 124.074 180 136.5 180C148.926 180 159 196.565 159 217Z"
+                                    fill="#D9D9D9" />
+                                <path class="about-cat-eye about-cat-eye--right"
+                                    d="M342 217C342 237.435 331.926 254 319.5 254C307.074 254 297 237.435 297 217C297 196.565 307.074 180 319.5 180C331.926 180 342 196.565 342 217Z"
+                                    fill="#D9D9D9" />
+                                <path
+                                    d="M246.5 249.5C240 264.5 237.5 266.5 220 268C202.879 268 192.5 253.5 192.5 246C194.5 227.5 203.379 254.5 220.5 254.5C237 253.5 250 229.5 246.5 249.5Z"
+                                    fill="#D9D9D9" />
+                                <path class="about-cat-whisker about-cat-whisker--left-1"
+                                    d="M101 266C100.181 272.577 84.5001 270.5 66.0001 269.5C47.6403 267.214 40.1814 263.577 41.0001 257C41.8189 250.423 49.6403 249.714 68.0001 252C86.3599 254.286 101.819 259.423 101 266Z"
+                                    fill="#D9D9D9" />
+                                <path class="about-cat-whisker about-cat-whisker--left-2"
+                                    d="M93.3356 282.333C94.2096 285.259 82.9685 288.557 70.0236 293.046C56.8942 296.968 50.9682 297.446 50.0942 294.52C49.2203 291.595 54.4457 289.231 67.5751 285.309C80.7046 281.387 92.4617 279.408 93.3356 282.333Z"
+                                    fill="#D9D9D9" />
+                                <path class="about-cat-whisker about-cat-whisker--right-1"
+                                    d="M366.374 266.234C367.301 272.81 385.062 270.734 406.017 269.734C426.812 267.448 435.26 263.81 434.333 257.234C433.406 250.657 424.547 249.948 403.751 252.234C382.956 254.52 365.446 259.657 366.374 266.234Z"
+                                    fill="#D9D9D9" />
+                                <path class="about-cat-whisker about-cat-whisker--right-2"
+                                    d="M363.165 282.333C362.175 285.259 374.907 288.557 389.569 293.046C404.44 296.968 411.152 297.446 412.142 294.52C413.132 291.595 407.214 289.231 392.342 285.309C377.471 281.387 364.154 279.408 363.165 282.333Z"
+                                    fill="#D9D9D9" />
+                                <path class="about-cat-paw"
+                                    d="M288.79 393.459C289.049 396.461 287.056 399.155 284.057 399.449C276.796 400.16 268.027 399.251 259.918 407.924C257.086 410.953 253.866 413.814 249.805 414.657C236.847 417.346 226 414.263 226 398.5C226 380.275 240.342 366 260.5 366C278.825 366 287.385 377.156 288.79 393.459Z"
+                                    fill="#48386D" />
+                                <ellipse cx="130" cy="375.5" rx="153" ry="144.5" fill="url(#paint0_radial_13_340)" />
+                                <path
+                                    d="M13.2753 357.155C12.1383 353.843 14.6701 350.418 18.1699 350.534L156.971 355.13C160.053 355.232 162.867 356.904 164.431 359.562L166.714 363.443C166.851 363.676 166.964 363.923 167.052 364.179L197.973 454.794L275.454 444.708C278.045 444.37 282.093 449.929 280.5 452C280 456.5 276.165 457.368 275.454 457.5L199.5 465C199.145 465.051 199.5 465 198.5 465L48.0794 451.585C46.51 451.441 45.1717 450.388 44.6615 448.897L13.2753 357.155Z"
+                                    fill="#939393" />
+                                <path
+                                    d="M195.894 439.24L245.394 441.74L274.394 443.24L277.894 445.24L197.894 454.74L201.473 454.243L198.394 446.74L195.894 439.24Z"
+                                    fill="#1E1E1E" />
+                                <path
+                                    d="M182.5 409.5L198 456L49 451.5L50.0193 458.635C50.2965 460.575 51.9389 462.029 53.8986 462.068L199.5 465L201.5 454.5L168.859 356.522C167.682 352.883 164.333 350.386 160.509 350.295L21.2334 347.001C19.7507 346.966 18.329 347.591 17.3523 348.707L15.3936 350.946H17.8936L91.3936 353.446L155.868 355.415C156.548 355.436 157.222 355.555 157.867 355.771L159.894 356.446L162.394 358.446L164.894 361.446L166.394 363.946L182.5 409.5Z"
+                                    fill="#D9D9D9" />
+                                <ellipse cx="95" cy="402.5" rx="12" ry="12.5" fill="#D9D9D9" />
+
+                                <g class="about-code">
+                                    <path class="about-code-line"
+                                        d="M47 315.5C47 313.567 48.567 312 50.5 312H72.5C74.433 312 76 313.567 76 315.5C76 317.433 74.433 319 72.5 319H50.5C48.567 319 47 317.433 47 315.5Z"
+                                        fill="#9A7AE6" />
+                                    <path class="about-code-line"
+                                        d="M80 315.5C80 313.567 81.567 312 83.5 312H96.5C98.433 312 100 313.567 100 315.5C100 317.433 98.433 319 96.5 319H83.5C81.567 319 80 317.433 80 315.5Z"
+                                        fill="#7AC9E6" />
+                                    <path class="about-code-line"
+                                        d="M55 324.5C55 322.567 56.567 321 58.5 321H66.5C68.433 321 70 322.567 70 324.5C70 326.433 68.433 328 66.5 328H58.5C56.567 328 55 326.433 55 324.5Z"
+                                        fill="#E67ACB" />
+                                    <path class="about-code-line"
+                                        d="M64 343.5C64 341.567 65.567 340 67.5 340H75.5C77.433 340 79 341.567 79 343.5C79 345.433 77.433 347 75.5 347H67.5C65.567 347 64 345.433 64 343.5Z"
+                                        fill="#E67ACB" />
+                                    <path class="about-code-line"
+                                        d="M75 324.5C75 322.567 76.567 321 78.5 321H92.5C94.433 321 96 322.567 96 324.5C96 326.433 94.433 328 92.5 328H78.5C76.567 328 75 326.433 75 324.5Z"
+                                        fill="#E67ACB" />
+                                    <path class="about-code-line"
+                                        d="M84 343.5C84 341.567 85.567 340 87.5 340H101.5C103.433 340 105 341.567 105 343.5C105 345.433 103.433 347 101.5 347H87.5C85.567 347 84 345.433 84 343.5Z"
+                                        fill="#E67ACB" />
+                                    <path class="about-code-line"
+                                        d="M98 324.5C98 322.567 99.567 321 101.5 321H106.5C108.433 321 110 322.567 110 324.5C110 326.433 108.433 328 106.5 328H101.5C99.567 328 98 326.433 98 324.5Z"
+                                        fill="#7AE69A" />
+                                    <path class="about-code-line"
+                                        d="M107 343.5C107 341.567 108.567 340 110.5 340H115.5C117.433 340 119 341.567 119 343.5C119 345.433 117.433 347 115.5 347H110.5C108.567 347 107 345.433 107 343.5Z"
+                                        fill="#7AE69A" />
+                                    <path class="about-code-line"
+                                        d="M113 324.5C113 322.567 114.567 321 116.5 321H134.5C136.433 321 138 322.567 138 324.5C138 326.433 136.433 328 134.5 328H116.5C114.567 328 113 326.433 113 324.5Z"
+                                        fill="#E6DD7A" />
+                                    <path class="about-code-line"
+                                        d="M122 343.5C122 341.567 123.567 340 125.5 340H143.5C145.433 340 147 341.567 147 343.5C147 345.433 145.433 347 143.5 347H125.5C123.567 347 122 345.433 122 343.5Z"
+                                        fill="#E6DD7A" />
+                                    <path class="about-code-line"
+                                        d="M59 334.5C59 332.567 60.567 331 62.5 331H102.5C104.433 331 106 332.567 106 334.5C106 336.433 104.433 338 102.5 338H62.5C60.567 338 59 336.433 59 334.5Z"
+                                        fill="#E6DD7A" />
+                                    <path class="about-code-line"
+                                        d="M108 334.5C108 332.567 109.567 331 111.5 331H119.5C121.433 331 123 332.567 123 334.5C123 336.433 121.433 338 119.5 338H111.5C109.567 338 108 336.433 108 334.5Z"
+                                        fill="#7AC9E6" />
+                                    <path class="about-code-line"
+                                        d="M129 334.5C129 332.567 130.567 331 132.5 331H140.5C142.433 331 144 332.567 144 334.5C144 336.433 142.433 338 140.5 338H132.5C130.567 338 129 336.433 129 334.5Z"
+                                        fill="#9A7AE6" />
+                                </g>
+                            </g>
+                            <defs>
+                                <radialGradient id="paint0_radial_13_340" cx="0" cy="0" r="1"
+                                    gradientTransform="matrix(62.2373 160.326 -162.899 71.2366 124.814 375.5)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#7AC9E6" />
+                                    <stop offset="1" stop-color="#05071D" stop-opacity="0" />
+                                </radialGradient>
+                                <clipPath id="clip0_13_340">
+                                    <rect width="809" height="682" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-container">
+                <h2 class="projects-title">Projects</h2>
+
+                <!-- Project Card 1: Salesforce Marketing Cloud (Image LEFT, Text RIGHT) -->
+                <div class="project-card project-layout-left">
+                    <div class="project-image">
+                        <img src="/assets/saleforce-development.png" alt="Salesforce database illustration" />
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-header">
+                            <span class="project-name">Client SFMC journeys
+                        </h3>
+                        <p class="project-subtitle">Marketing Automation</p>
+                        <p class="project-description">
+                            SFMC development covering SQL-driven segmentation, multi-path journeys, AMPscript
+                            personalization, and dynamic email builds.
+                        </p>
+
+                        <p class="project-skills"><strong>Key skills:</strong> SQL, AMPscript, Journey Builder, Data
+                            Views</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Neural Network Trainer (Image RIGHT, Text LEFT) -->
+                <div class="project-card card-right project-layout-right">
+                    <div class="project-content">
+                        <h3 class="project-header">
+                            <span class="project-icon">🧠</span>
+                            <span class="project-name">Neural Network Trainer</span>
+                        </h3>
+                        <p class="project-subtitle">Full-Stack Web Application</p>
+                        <p class="project-description">
+                            A web app for training and visualizing neural networks using preset or custom datasets.
+                            Includes saved training runs, authentication, and real-time progress visualization.
+                        </p>
+                        <p class="project-skills"><strong>Key skills:</strong> React, FastAPI, Python, NumPy, MongoDB,
+                            API integration</p>
+                        <a class="project-repo-button" href="#" target="_blank" rel="noopener noreferrer">GitHub
+                            Repo</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="/assets/neural-network.png" alt="Neural Network Trainer illustration" />
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Omni-Channel Application (Image LEFT, Text RIGHT) -->
+                <div class="project-card project-layout-left">
+                    <div class="project-image">
+                        <img src="/assets/omni-channel.png" alt="Salesforce database illustration" />
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-header">
+                            <span class="project-icon">🌐</span>
+                            <span class="project-name">Omni-Channel Application</span>
+                        </h3>
+                        <p class="project-subtitle">Customer Interaction Platform</p>
+                        <p class="project-description">
+                            An application designed to unify customer interactions across multiple channels, focusing on
+                            clean data flow, scalable architecture, and consistent user experience.
+                        </p>
+                        <p class="project-skills"><strong>Key skills:</strong> Frontend-backend integration, data
+                            modeling, system design, UI flows</p>
+                        <a class="project-repo-button" href="https://github.com/elizesalvacion/omni-chat-project"
+                            target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: Loyalty Calculator (Image RIGHT, Text LEFT) -->
+                <div class="project-card card-right project-layout-right">
+                    <div class="project-content">
+                        <h3 class="project-header">
+                            <span class="project-icon">📊</span>
+                            <span class="project-name">Loyalty & Engagement Calculator</span>
+                        </h3>
+                        <p class="project-subtitle">Python Microservice</p>
+                        <p class="project-description">
+                            A standalone microservice that processes customer datasets to calculate loyalty and
+                            engagement scores for segmentation and analytics use cases.
+                        </p>
+                        <p class="project-skills"><strong>Key skills:</strong> Python, microservices, data processing,
+                            analytics logic, API-ready design</p>
+                        <a class="project-repo-button" href="#" target="_blank" rel="noopener noreferrer">GitHub
+                            Repo</a>
+                    </div>
+                    <div class="project-image">
+                        <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Data processing illustration">
+                            <rect width="400" height="320" fill="#2A3654" rx="12" />
+                            <path d="M 160 40 L 190 40 L 180 60 L 170 60 Z" fill="#B4ADEA" opacity="0.6" />
+                            <rect x="172" y="60" width="6" height="20" fill="#B4ADEA" opacity="0.6" />
+                            <circle cx="200" cy="35" r="2" fill="#B4ADEA" opacity="0.7" />
+                            <circle cx="215" cy="45" r="1.5" fill="#B4ADEA" opacity="0.5" />
+                            <path d="M 145 50 L 147 55 L 152 57 L 147 59 L 145 64 L 143 59 L 138 57 L 143 55 Z"
+                                fill="#B4ADEA" opacity="0.6" />
+                            <rect x="220" y="130" width="60" height="30" rx="6" fill="#F4B942" />
+                            <text x="250" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold"
+                                fill="#1F2A44" text-anchor="middle">SQL</text>
+                            <rect x="140" y="140" width="140" height="100" rx="8" fill="#1F2A44" opacity="0.9" />
+                            <circle cx="150" cy="150" r="3" fill="#FF5F56" />
+                            <circle cx="160" cy="150" r="3" fill="#FFBD2E" />
+                            <circle cx="170" cy="150" r="3" fill="#27C93F" />
+                            <text x="150" y="175" font-family="monospace" font-size="11" fill="#4CAF50">SELECT</text>
+                            <rect x="150" y="185" width="100" height="2" fill="#B4ADEA" opacity="0.5" />
+                            <rect x="150" y="195" width="80" height="2" fill="#B4ADEA" opacity="0.4" />
+                            <rect x="150" y="205" width="90" height="2" fill="#B4ADEA" opacity="0.4" />
+                            <rect x="150" y="215" width="70" height="2" fill="#B4ADEA" opacity="0.3" />
+                            <ellipse cx="200" cy="270" rx="35" ry="12" fill="#F4B942" opacity="0.9" />
+                            <rect x="165" y="270" width="70" height="30" fill="#F4B942" opacity="0.8" />
+                            <ellipse cx="200" cy="300" rx="35" ry="12" fill="#F4B942" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Technologies Section -->
+    <section class="skills-section">
+        <div class="container">
+            <div class="skills-container">
+                <h2 class="skills-title">Skills & Technologies</h2>
+
+                <div class="skills-content">
+                    <!-- Left side: Skill labels -->
+                    <div class="skills-labels">
+                        <div class="skill-label" data-skill="salesforce">
+                            <h3>Salesforce<br>Marketing Cloud</h3>
+                        </div>
+                        <div class="skill-label" data-skill="web">
+                            <h3>Web Development</h3>
+                        </div>
+                    </div>
+
+                    <!-- Right side: Details area -->
+                    <div class="skills-details">
+                        <!-- Default state message -->
+                        <div class="skills-default active">
+                            <p>Tools I've gathered along the way, project by project.</p>
+                        </div>
+
+                        <!-- Salesforce details -->
+                        <div class="skills-detail" data-detail="salesforce">
+                            <ul>
+                                <li>SQL (Data Views, joins, segmentation logic)</li>
+                                <li>AMPscript</li>
+                                <li>Journey Builder</li>
+                                <li>Automation Studio</li>
+                                <li>Marketing Cloud Next</li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Web Development details -->
+                        <div class="skills-detail" data-detail="web">
+                            <ul>
+                                <li>HTML, CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Next.js</li>
+                                <li>REST / API familiarity</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cute cat illustration -->
+                    <div class="skills-illustration">
+                        <svg width="676" height="437" viewBox="0 0 676 437" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M675.267 267.345C675.267 352.121 428.267 477.345 519.267 354.845C595.767 324.345 676.879 246.845 535.767 199.845C515.267 177.345 518.267 140.845 571.767 137.345C624.786 137.345 675.267 182.569 675.267 267.345Z"
+                                fill="#05071D" />
+                            <path
+                                d="M558.267 331.345C558.267 442.354 414.441 432.07 264.267 435.845C85.2666 440.345 -9.58831 373.499 0.766936 254.845C12.7669 117.345 122.648 61.8449 250.267 61.8449C408.267 61.8449 555.267 215.345 558.267 331.345Z"
+                                fill="#05071D" />
+                            <path
+                                d="M58.8565 62.9524C65.7293 38.7558 69.1657 26.6575 75.145 20.1723C85.2307 9.23294 100.888 5.39943 114.887 10.442C123.186 13.4314 131.823 22.5737 149.097 40.8583C164.525 57.1895 172.239 65.3551 174.813 73.2679C179.151 86.5995 175.581 101.238 165.593 111.076C159.665 116.915 149.057 120.612 127.843 128.007L30.7668 161.845L58.8565 62.9524Z"
+                                fill="#05071D" />
+                            <path
+                                d="M85.1132 69.5122C88.8672 54.9431 90.7442 47.6585 96.215 46.0682C101.686 44.4779 107.175 49.6211 118.155 59.9074L136.767 77.3449L76.2668 103.845L85.1132 69.5122Z"
+                                fill="#48386D" />
+                            <path
+                                d="M326.339 45.6328C367.676 11.7321 388.345 -5.21821 407.827 1.42023C427.309 8.05866 433.327 34.1026 445.364 86.1904L460.767 152.845L293.767 72.3449L326.339 45.6328Z"
+                                fill="#05071D" />
+                            <path
+                                d="M403.986 59.0958C399.858 46.7489 397.795 40.5754 392.795 39.0991C387.796 37.6228 382.71 41.6849 372.537 49.809L345.983 71.0152L417.781 100.362L403.986 59.0958Z"
+                                fill="#48386D" />
+                            <path
+                                d="M155.267 206.845C155.267 227.279 145.193 243.845 132.767 243.845C120.34 243.845 110.267 227.279 110.267 206.845C110.267 186.41 120.34 169.845 132.767 169.845C145.193 169.845 155.267 186.41 155.267 206.845Z"
+                                fill="#D9D9D9" />
+                            <path
+                                d="M338.267 206.845C338.267 227.279 328.193 243.845 315.767 243.845C303.34 243.845 293.267 227.279 293.267 206.845C293.267 186.41 303.34 169.845 315.767 169.845C328.193 169.845 338.267 186.41 338.267 206.845Z"
+                                fill="#D9D9D9" />
+                            <path
+                                d="M242.767 239.345C236.267 254.345 233.767 256.345 216.267 257.845C199.146 257.845 188.767 243.345 188.767 235.845C190.767 217.345 199.646 244.345 216.767 244.345C233.267 243.345 246.267 219.345 242.767 239.345Z"
+                                fill="#D9D9D9" />
+                            <path
+                                d="M97.2669 255.845C96.4482 262.422 80.7669 260.345 62.2669 259.345C43.9071 257.059 36.4482 253.422 37.267 246.845C38.0857 240.268 45.9071 239.559 64.2669 241.845C82.6267 244.131 98.0857 249.268 97.2669 255.845Z"
+                                fill="#D9D9D9" />
+                            <path
+                                d="M89.6025 272.178C90.4764 275.104 79.2353 278.402 66.2904 282.891C53.161 286.813 47.235 287.291 46.3611 284.365C45.4871 281.439 50.7126 279.076 63.842 275.154C76.9714 271.231 88.7285 269.252 89.6025 272.178Z"
+                                fill="#D9D9D9" />
+                            <path
+                                d="M362.64 256.079C363.568 262.655 381.329 260.579 402.283 259.579C423.079 257.293 431.527 253.655 430.6 247.079C429.672 240.502 420.813 239.793 400.018 242.079C379.223 244.364 361.713 249.502 362.64 256.079Z"
+                                fill="#D9D9D9" />
+                            <path
+                                d="M359.431 272.178C358.442 275.104 371.174 278.402 385.836 282.891C400.707 286.813 407.419 287.291 408.409 284.365C409.399 281.439 403.48 279.076 388.609 275.154C373.738 271.231 360.421 269.252 359.431 272.178Z"
+                                fill="#D9D9D9" />
+                            <path
+                                d="M116.267 413.345C116.267 427.704 83.9547 427.345 68.7668 427.345C53.579 427.345 28.2668 427.704 28.2668 413.345C28.2668 398.986 53.579 383.845 68.7668 383.845C83.9547 383.845 116.267 398.986 116.267 413.345Z"
+                                fill="#48386D" />
+                            <path
+                                d="M334.267 421.683C334.267 436.208 304.158 435.844 290.005 435.844C275.853 435.844 252.267 436.208 252.267 421.683C252.267 407.159 275.853 391.845 290.005 391.845C304.158 391.845 334.267 407.159 334.267 421.683Z"
+                                fill="#48386D" />
+                            <path
+                                d="M123.767 122.345C162.963 122.345 194.767 154.341 194.767 193.845C194.767 233.349 162.963 265.345 123.767 265.345C84.5706 265.345 52.7668 233.349 52.7668 193.845C52.7668 154.341 84.5706 122.345 123.767 122.345Z"
+                                stroke="#9A7AE6" stroke-width="5" />
+                            <path
+                                d="M321.767 131.345C360.963 131.345 392.767 163.341 392.767 202.845C392.767 242.349 360.963 274.345 321.767 274.345C282.571 274.345 250.767 242.349 250.767 202.845C250.767 163.341 282.571 131.345 321.767 131.345Z"
+                                stroke="#9A7AE6" stroke-width="5" />
+                            <line x1="195.284" y1="196.845" x2="252.284" y2="197.845" stroke="#9A7AE6"
+                                stroke-width="2" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (placeholder for CTA link) -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+
+            <form class="contact-form" id="contact-form" data-to="salvacioncharlize@gmail.com">
+                <div class="contact-form-row">
+                    <div class="contact-field">
+                        <label for="contact-name">Name</label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" required />
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="contact-email">Email</label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" required />
+                    </div>
+                </div>
+
+                <div class="contact-field">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button class="cta-button" type="submit">Email Me</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
