@@ -598,17 +598,22 @@ h1, h2 {
     margin-bottom: 3rem;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
 /* Project Cards */
 
 .project-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2.5rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     background-color: #262f50;
-    border-radius: 40px;
-    padding: 2rem 2rem;
-    margin-bottom: 2.5rem;
+    border-radius: 32px;
+    overflow: hidden;
+    padding: 0;
+    min-height: 460px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -617,13 +622,21 @@ h1, h2 {
     /* box-shadow: 0 8px 20px #6977aa86; */
 }
 
+.project-card .project-image {
+    order: 0;
+}
+
+.project-card .project-content {
+    order: 1;
+}
+
 .project-repo-button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.65rem 1.25rem;
+    padding: 1rem 1rem;
     background-color: var(--accent);
     color: var(--bg-primary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
     border-radius: 999px;
@@ -641,60 +654,25 @@ h1, h2 {
     outline-offset: 3px;
 }
 
-.card-right {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2.5rem;
-    align-items: center;
-  
- 
-}
-
-
-.project-card:last-child {
-    margin-bottom: 0;
-}
-
-/* Alternating Layouts */
-
-.project-layout-left .project-image {
-    order: 1;
-}
-
-.project-layout-left .project-content {
-    order: 2;
-}
-
-.project-layout-right .project-content {
-    order: 1;
-}
-
-.project-layout-right .project-image {
-    order: 2;
-}
-
 /* Project Image */
 
 .project-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
+    width: 100%;
+    height: 220px;
+    background-color: #2A3654;
+    overflow: hidden;
 }
 
 .project-image svg,
 .project-image img {
     width: 100%;
-    max-width: 380px;
-    height: auto;
-    border-radius:60px;
+    height: 100%;
+    display: block;
+}
 
-      box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.15),
-        0 4px 8px rgba(0, 0, 0, 0.08);
-
-    transform: translateY(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.project-image img {
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Project Content */
@@ -702,20 +680,21 @@ h1, h2 {
 .project-content {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
+    padding: 1.5rem 1.5rem 1.5rem;
 }
 
 .project-header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.1rem;
 }
 
 .project-icon {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .project-name {
@@ -723,27 +702,33 @@ h1, h2 {
 }
 
 .project-subtitle {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     color: var(--text-light);
+    opacity: 0.9;
 }
 
 .project-description {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: var(--text-light);
-
+    opacity: 0.9;
 }
 
 
 
 .project-skills {
-    font-size: 1.2rem;
+    font-size: 0.75rem;
     color: var(--text-light);
-    margin-top: 0.75rem;
+    margin-top: 0.4rem;
 }
 
 .project-skills strong {
     color: var(--accent);
     font-weight: 800;
+}
+
+.project-content .project-repo-button {
+    align-self: center;
+    margin-top: 0.75rem;
 }
 
 /* ===========================
@@ -1068,17 +1053,17 @@ h1, h2 {
         padding: 2.5rem 1.5rem;
     }
 
-    .project-card {
-        grid-template-columns: 1fr;
-      
-        padding: 1.75rem 0rem;
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.25rem;
     }
 
-    .project-layout-left .project-image,
-    .project-layout-left .project-content,
-    .project-layout-right .project-content,
-    .project-layout-right .project-image {
-        order: initial;
+    .project-card {
+        min-height: 440px;
+    }
+
+    .project-image {
+        height: 115px;
     }
 
     .project-image {
@@ -1237,9 +1222,17 @@ h1, h2 {
         margin-bottom: 2rem;
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
     .project-card {
-        padding: 1.5rem 1.25rem;
-        margin-bottom: 2rem;
+        min-height: 0;
+    }
+
+    .project-image {
+        height: 110px;
     }
 
     .project-header {
